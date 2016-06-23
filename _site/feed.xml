@@ -5,27 +5,17 @@
     <description>Leonf Fu</description>
     <link>http://leonfu.me/</link>
     <atom:link href="http://leonfu.me/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 23 Jun 2016 15:30:35 +0800</pubDate>
-    <lastBuildDate>Thu, 23 Jun 2016 15:30:35 +0800</lastBuildDate>
+    <pubDate>Thu, 23 Jun 2016 15:42:13 +0800</pubDate>
+    <lastBuildDate>Thu, 23 Jun 2016 15:42:13 +0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
-        <title>Jekyll&#39;s Google Summer of Code Project: The CMS You Always Wanted</title>
-        <description>&lt;p&gt;This year, Jekyll applied to be a part of &lt;a href=&quot;https://summerofcode.withgoogle.com/how-it-works/&quot;&gt;Google Summer of Code&lt;/a&gt;. Students were able to propose any project related to Jekyll. With a gracious sponsorship from GitHub and the participation of myself, @benbalter and @jldec, Jekyll was able to accept two students for the 2016 season, @mertkahyaoglu and @rush-skills.&lt;/p&gt;
-
-&lt;p&gt;These students are working on a project that fills a huge need for the community: &lt;em&gt;a graphical solution for managing your site’s content.&lt;/em&gt; Current plans include a fully-integrated admin which spins up when you run jekyll serve and provides a friendly web interface for creating and editing your content. The server and web interface will speak a common HTTP interface so either piece could be switched out for, e.g. a server which writes directly to a repository on GitHub.&lt;/p&gt;
-
-&lt;p&gt;The strength of text files as the storage medium for content has been part of Jekyll’s success. &lt;a href=&quot;/&quot;&gt;Our homepage&lt;/a&gt; lauds the absence of a traditional SQL database when using Jekyll – your content should be what demands your time, not pesky database downtime. Unfortunately, understanding of the structure of a Jekyll site takes some work, enough that for some users, it’s prohibitive to using Jekyll to accomplish their publishing goals.&lt;/p&gt;
-
-&lt;p&gt;Mert and Ankur both applied to take on this challenge and agreed to split the project, one taking on the web interface and the other taking on the backend. We’re very excited to see a fully-functional CMS for Jekyll at the end of the summer produced by these excellent community members, and we hope you’ll join us in cheering them on and sharing our gratitude for all their hard work.&lt;/p&gt;
-
-&lt;p&gt;Thanks, as always, for being part of such a wonderful community that made this all possible. I’m honored to work with each of you to create something folks all around the globe find a joy to use. I look forward to our continued work to move Jekyll forward.&lt;/p&gt;
-
-&lt;p&gt;As always, Happy Jekylling!&lt;/p&gt;
+        <title>我的第一条博客</title>
+        <description>&lt;p&gt;最近工作时间比较富裕，闲得有点慌，于是做琢磨着写点东西。不过还没有想好具体写点什么，技术？影评？或者其他。&lt;/p&gt;
 </description>
-        <pubDate>Sat, 04 Jun 2016 04:21:02 +0800</pubDate>
-        <link>http://leonfu.me/update-on-jekyll-s-google-summer-of-code-projects</link>
-        <guid isPermaLink="true">http://leonfu.me/update-on-jekyll-s-google-summer-of-code-projects</guid>
+        <pubDate>Thu, 23 Jun 2016 00:00:00 +0800</pubDate>
+        <link>http://leonfu.me/first-blog</link>
+        <guid isPermaLink="true">http://leonfu.me/first-blog</guid>
         
         
         <category>community</category>
