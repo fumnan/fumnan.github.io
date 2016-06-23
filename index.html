@@ -1,56 +1,15 @@
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    
-        <title>Leon Fu</title>
-    
-    <meta name="description" content="Leonf Fu">
-    <link href='/css/font.css' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-</head>
-<body>
-    <div class="wrapper">
-        
-<div class="header">
-    <h1>Leon Fu</h1>
-    <ul>
-        
-        <li>
-            <a href="/">home</a>
-        </li>
-        
-        <li>
-            <a href="/photo">photo</a>
-        </li>
-        
-        <li>
-            <a href="/me">about</a>
-        </li>
-        
-        <li>
-            <a href="mailto:jmwsen@gmail.com">contact</a>
-        </li>
-        
-        <li>
-            <a href="https://github.com/liangfu0">github</a>
-        </li>
-        
-    </ul>
-</div>
+---
+layout: default
+---
 
+{% include header.html %}
 <div class="blog">
     <h1>Blog Posts:</h1>
     <ul>
-        
+        {% for post in site.posts %}
         <li>
-            <span class="date">2016 Jun 22</span> - <a href="/welcome-to-jekyll0">my new blog!</a>
+            <span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a href="{{ post.url }}">{{ post.title }}</a>
         </li>
-        
+        {% endfor %}
     </ul>
 </div>
-
-    </div>
-</body>
-</html>
