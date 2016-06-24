@@ -5,9 +5,53 @@
     <description>Leonf Fu</description>
     <link>http://leonfu.me/</link>
     <atom:link href="http://leonfu.me/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 23 Jun 2016 15:47:06 +0800</pubDate>
-    <lastBuildDate>Thu, 23 Jun 2016 15:47:06 +0800</lastBuildDate>
+    <pubDate>Fri, 24 Jun 2016 16:24:52 +0800</pubDate>
+    <lastBuildDate>Fri, 24 Jun 2016 16:24:52 +0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>视频转WebP</title>
+        <description>&lt;p&gt;因为产品的需求，在用户的Moment里面显示动态的图片，类似于music.ly个人主页的效果，所以在技术上面我们需要把mp4格式的视频转换成动态WebP格式的图片。为什么不用gif而用WebP格式，这里有答案：&lt;a href=&quot;https://developers.google.com/speed/webp/&quot;&gt;https://developers.google.com/speed/webp/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;清楚了需求，接下来我们就开始动手，既然是处理视频，那么我们必然选用ffmpeg工具。按照需求我们只需要把mp4格式的视频转换成WebP格式，那ffmpeg能否直接满足我们的需求呢，答案是否定的，目前ffmpeg还不支持把视频文件转换成WebP格式的图片。那么我们就需要先把视频文件转换成gif格式的图片，然后再把gif格式的图片转换成WebP格式的图片。&lt;/p&gt;
+
+&lt;p&gt;视频转换成gif比较简单，一行命令就可以解决：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;ffmpeg -t 1 -ss 1 -i a.mp4 a.gif
+ -t 表示截取视频的时长
+ -ss 表示从视频的第几秒开始截取
+ -i 表示视频源文件
+ a.mp4是视频源文件
+ a.gif是输出的gif格式图片
+ &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;这样视频文件就转换成了gif格式的图片，接下来我们只需要把gif格式的图片转换成动态WebP格式即可，因为Google官方提供了工具可以直接把gif图片转换成WebP格式的文件，所以也是一行命令就可以解决：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;gif2webp -lossy a.fig -o a.webp
+-lossy 表示有损压缩
+-o 表示输出的webp格式文件&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;这样我就得到了我们想要的动态WebP格式的图片，没错，就是这么简单。
+当然涉及到图片的尺寸、视频转gif后图片的色彩质量、最终的文件大小大家可以继续深入的研究，目前我们完整的命令是这样：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;ffmpeg -y -ss 1 -t 1 -i a.mp4 -vf &lt;span class=&quot;nv&quot;&gt;fps&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;10,scale&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;-1:300:flags&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;lanczos,&lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+palettegen palette.png
+ffmpeg -ss 1 -t 1 -i a.mp4 -i palette.png -filter_complex &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;&quot;fps=12,scale=-1:300:flags=lanczos[x];[x][1:v]paletteuse&quot;&lt;/span&gt; a.gif
+gif2webp -lossy a.gif -o a.webp&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;相关参考资料：&lt;br /&gt;
+&lt;a href=&quot;http://blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html&quot;&gt;http://blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html&lt;/a&gt;
+&lt;a href=&quot;https://developers.google.com/speed/webp/docs/gif2webp&quot;&gt;https://developers.google.com/speed/webp/docs/gif2webp&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 24 Jun 2016 00:00:00 +0800</pubDate>
+        <link>http://leonfu.me/convert-video-to-webp</link>
+        <guid isPermaLink="true">http://leonfu.me/convert-video-to-webp</guid>
+        
+        
+        <category>community</category>
+        
+      </item>
     
       <item>
         <title>我的第一条博客</title>
