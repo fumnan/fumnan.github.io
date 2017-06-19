@@ -1,52 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Leon Fu</title>
-    <description>Leonf Fu</description>
+    <title>牛背上的娃</title>
+    <description>谢谢关注牛背上的娃，用图片述说世界，周一到周六更新图说世界，周日更新每周图片。</description>
     <link>http://leonfu.me/</link>
     <atom:link href="http://leonfu.me/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 24 Jun 2016 16:24:52 +0800</pubDate>
-    <lastBuildDate>Fri, 24 Jun 2016 16:24:52 +0800</lastBuildDate>
+    <pubDate>Mon, 19 Jun 2017 11:56:54 +0800</pubDate>
+    <lastBuildDate>Mon, 19 Jun 2017 11:56:54 +0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
-        <title>视频转WebP</title>
-        <description>&lt;p&gt;因为产品的需求，在用户的Moment里面显示动态的图片，类似于music.ly个人主页的效果，所以在技术上面我们需要把mp4格式的视频转换成动态WebP格式的图片。为什么不用gif而用WebP格式，这里有答案：&lt;a href=&quot;https://developers.google.com/speed/webp/&quot;&gt;https://developers.google.com/speed/webp/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;清楚了需求，接下来我们就开始动手，既然是处理视频，那么我们必然选用ffmpeg工具。按照需求我们只需要把mp4格式的视频转换成WebP格式，那ffmpeg能否直接满足我们的需求呢，答案是否定的，目前ffmpeg还不支持把视频文件转换成WebP格式的图片。那么我们就需要先把视频文件转换成gif格式的图片，然后再把gif格式的图片转换成WebP格式的图片。&lt;/p&gt;
-
-&lt;p&gt;视频转换成gif比较简单，一行命令就可以解决：&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;ffmpeg -t 1 -ss 1 -i a.mp4 a.gif
- -t 表示截取视频的时长
- -ss 表示从视频的第几秒开始截取
- -i 表示视频源文件
- a.mp4是视频源文件
- a.gif是输出的gif格式图片
- &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;这样视频文件就转换成了gif格式的图片，接下来我们只需要把gif格式的图片转换成动态WebP格式即可，因为Google官方提供了工具可以直接把gif图片转换成WebP格式的文件，所以也是一行命令就可以解决：&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;gif2webp -lossy a.fig -o a.webp
--lossy 表示有损压缩
--o 表示输出的webp格式文件&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;这样我就得到了我们想要的动态WebP格式的图片，没错，就是这么简单。
-当然涉及到图片的尺寸、视频转gif后图片的色彩质量、最终的文件大小大家可以继续深入的研究，目前我们完整的命令是这样：&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;ffmpeg -y -ss 1 -t 1 -i a.mp4 -vf &lt;span class=&quot;nv&quot;&gt;fps&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;10,scale&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;-1:300:flags&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;lanczos,&lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-palettegen palette.png
-ffmpeg -ss 1 -t 1 -i a.mp4 -i palette.png -filter_complex &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-&lt;span class=&quot;s2&quot;&gt;&quot;fps=12,scale=-1:300:flags=lanczos[x];[x][1:v]paletteuse&quot;&lt;/span&gt; a.gif
-gif2webp -lossy a.gif -o a.webp&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;相关参考资料：&lt;br /&gt;
-&lt;a href=&quot;http://blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html&quot;&gt;http://blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html&lt;/a&gt;
-&lt;a href=&quot;https://developers.google.com/speed/webp/docs/gif2webp&quot;&gt;https://developers.google.com/speed/webp/docs/gif2webp&lt;/a&gt;&lt;/p&gt;
+        <title>图说世界 2017年6月19日</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzI2OTQyMzEyMw==&amp;amp;mid=2247483716&amp;amp;idx=1&amp;amp;sn=968268fcbd79fbcf8de62065f04f8e26&amp;amp;chksm=eae1c638dd964f2e8c538371bf22fa5a6374e2d5ce6df04dac4825db0c98d7ce6334e4e0cf97#rd&quot;&gt;点击查看&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Fri, 24 Jun 2016 00:00:00 +0800</pubDate>
-        <link>http://leonfu.me/convert-video-to-webp</link>
-        <guid isPermaLink="true">http://leonfu.me/convert-video-to-webp</guid>
+        <pubDate>Mon, 19 Jun 2017 00:00:00 +0800</pubDate>
+        <link>http://leonfu.me/best-photographs-of-the-day@20170619</link>
+        <guid isPermaLink="true">http://leonfu.me/best-photographs-of-the-day@20170619</guid>
         
         
         <category>community</category>
@@ -54,12 +23,25 @@ gif2webp -lossy a.gif -o a.webp&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
       </item>
     
       <item>
-        <title>我的第一条博客</title>
-        <description>&lt;p&gt;最近工作时间比较富裕，闲得有点慌，于是做琢磨着写点东西。不过还没有想好具体写点什么，技术？影评？或者其他。&lt;/p&gt;
+        <title>每周图片 2017年6月18日</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzI2OTQyMzEyMw==&amp;amp;mid=2247483698&amp;amp;idx=1&amp;amp;sn=367bf048d17db7bd23e8cddb4024a09d&amp;amp;chksm=eae1c64edd964f5844754efa79ea52eda730f643fd94d3ad34677733ba97e2be6a3beb38ed60#rd&quot;&gt;点击查看&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Thu, 23 Jun 2016 00:00:00 +0800</pubDate>
-        <link>http://leonfu.me/first-blog</link>
-        <guid isPermaLink="true">http://leonfu.me/first-blog</guid>
+        <pubDate>Sun, 18 Jun 2017 00:00:00 +0800</pubDate>
+        <link>http://leonfu.me/best-photographs-of-the-week@20170618</link>
+        <guid isPermaLink="true">http://leonfu.me/best-photographs-of-the-week@20170618</guid>
+        
+        
+        <category>community</category>
+        
+      </item>
+    
+      <item>
+        <title>图说世界 2017年6月17日</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzI2OTQyMzEyMw==&amp;amp;mid=2247483689&amp;amp;idx=1&amp;amp;sn=9fa27d1177b158d30e2b699a9de03ffd&amp;amp;chksm=eae1c655dd964f434e150bfb223ea0c50545a0840b67045d1de09b8dac56ace8f01f8aaef82a#rd&quot;&gt;点击查看&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 17 Jun 2017 00:00:00 +0800</pubDate>
+        <link>http://leonfu.me/best-photographs-of-the-day@20170617</link>
+        <guid isPermaLink="true">http://leonfu.me/best-photographs-of-the-day@20170617</guid>
         
         
         <category>community</category>
