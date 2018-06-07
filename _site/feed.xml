@@ -3,19 +3,32 @@
   <channel>
     <title>牛背上的娃</title>
     <description>谢谢关注牛背上的娃，用图片述说世界，周一到周六更新图说世界，周日更新每周图片。</description>
-    <link>http://leonfu.me/</link>
-    <atom:link href="http://leonfu.me/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 19 Jun 2017 13:12:58 +0800</pubDate>
-    <lastBuildDate>Mon, 19 Jun 2017 13:12:58 +0800</lastBuildDate>
-    <generator>Jekyll v3.1.6</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 31 May 2018 15:50:27 +0800</pubDate>
+    <lastBuildDate>Thu, 31 May 2018 15:50:27 +0800</lastBuildDate>
+    <generator>Jekyll v3.8.1</generator>
+    
+      <item>
+        <title>图说世界 2017年6月20日</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzI2OTQyMzEyMw==&amp;amp;mid=2247483741&amp;amp;idx=1&amp;amp;sn=bc74e3b02a09fe3ec49a954541df74b1&amp;amp;chksm=eae1c621dd964f37a648e1881d9eef2f7452848fe72332874cc6a469652385ec7fb1ccdfd871#rd&quot;&gt;点击查看&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 20 Jun 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/best-photographs-of-the-day@20170620</link>
+        <guid isPermaLink="true">http://localhost:4000/best-photographs-of-the-day@20170620</guid>
+        
+        
+        <category>community</category>
+        
+      </item>
     
       <item>
         <title>图说世界 2017年6月19日</title>
         <description>&lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzI2OTQyMzEyMw==&amp;amp;mid=2247483716&amp;amp;idx=1&amp;amp;sn=968268fcbd79fbcf8de62065f04f8e26&amp;amp;chksm=eae1c638dd964f2e8c538371bf22fa5a6374e2d5ce6df04dac4825db0c98d7ce6334e4e0cf97#rd&quot;&gt;点击查看&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 19 Jun 2017 00:00:00 +0800</pubDate>
-        <link>http://leonfu.me/best-photographs-of-the-day@20170619</link>
-        <guid isPermaLink="true">http://leonfu.me/best-photographs-of-the-day@20170619</guid>
+        <link>http://localhost:4000/best-photographs-of-the-day@20170619</link>
+        <guid isPermaLink="true">http://localhost:4000/best-photographs-of-the-day@20170619</guid>
         
         
         <category>community</category>
@@ -27,8 +40,8 @@
         <description>&lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzI2OTQyMzEyMw==&amp;amp;mid=2247483698&amp;amp;idx=1&amp;amp;sn=367bf048d17db7bd23e8cddb4024a09d&amp;amp;chksm=eae1c64edd964f5844754efa79ea52eda730f643fd94d3ad34677733ba97e2be6a3beb38ed60#rd&quot;&gt;点击查看&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 18 Jun 2017 00:00:00 +0800</pubDate>
-        <link>http://leonfu.me/best-photographs-of-the-week@20170618</link>
-        <guid isPermaLink="true">http://leonfu.me/best-photographs-of-the-week@20170618</guid>
+        <link>http://localhost:4000/best-photographs-of-the-week@20170618</link>
+        <guid isPermaLink="true">http://localhost:4000/best-photographs-of-the-week@20170618</guid>
         
         
         <category>community</category>
@@ -40,8 +53,8 @@
         <description>&lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzI2OTQyMzEyMw==&amp;amp;mid=2247483689&amp;amp;idx=1&amp;amp;sn=9fa27d1177b158d30e2b699a9de03ffd&amp;amp;chksm=eae1c655dd964f434e150bfb223ea0c50545a0840b67045d1de09b8dac56ace8f01f8aaef82a#rd&quot;&gt;点击查看&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 17 Jun 2017 00:00:00 +0800</pubDate>
-        <link>http://leonfu.me/best-photographs-of-the-day@20170617</link>
-        <guid isPermaLink="true">http://leonfu.me/best-photographs-of-the-day@20170617</guid>
+        <link>http://localhost:4000/best-photographs-of-the-day@20170617</link>
+        <guid isPermaLink="true">http://localhost:4000/best-photographs-of-the-day@20170617</guid>
         
         
         <category>community</category>
